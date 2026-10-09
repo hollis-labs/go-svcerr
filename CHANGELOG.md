@@ -1,5 +1,17 @@
 # Changelog
 
+## Repository retirement — 2026-10-09
+
+### Changed
+
+- Pin the CI toolchain to Go 1.26.9, which fixes the reachable standard-library
+  vulnerabilities reported by govulncheck; retain the Go 1.26.6 language floor.
+- Maintained development moved to [github.com/hollis-labs/libs/util/svcerr](https://github.com/hollis-labs/libs/tree/util%2Fv0.1.0/util/svcerr) in
+  `github.com/hollis-labs/libs/util@v0.1.0` (`util/v0.1.0`).
+- This standalone repository is retired after the replacement release was
+  verified fetchable with successful module CI. README migration instructions
+  identify the new import prefix; existing standalone tags and history are preserved.
+
 All notable changes to go-svcerr are documented here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
