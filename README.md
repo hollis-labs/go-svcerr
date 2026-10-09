@@ -1,5 +1,22 @@
 # go-svcerr
 
+## Maintenance moved to `github.com/hollis-labs/libs/util`
+
+This standalone repository is retired. Maintained source and documentation are
+in [github.com/hollis-labs/libs/util/svcerr](https://github.com/hollis-labs/libs/tree/util%2Fv0.1.0/util/svcerr), released in **`util/v0.1.0`**.
+Install the replacement module:
+
+```sh
+go get github.com/hollis-labs/libs/util@v0.1.0
+```
+
+Replace the `github.com/hollis-labs/go-svcerr` import prefix with
+`github.com/hollis-labs/libs/util/svcerr`, retaining the package subpath. Review the replacement documentation
+for any API changes before migrating. Existing standalone tags and history remain
+available; old module pins do not automatically redirect to the new module.
+
+The documentation below describes historical standalone usage.
+
 Small transport-agnostic typed error carrier: status, machine code, safe message, with errors.Is/As support.
 
 ## Status
